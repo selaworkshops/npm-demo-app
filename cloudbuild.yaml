@@ -9,7 +9,7 @@ steps:
   args: ['set', 'image', 'deployment/demo-app', 'demo-app=gcr.io/$PROJECT_ID/npm-demo-app:$SHORT_SHA']
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-c'
-  - 'CLOUDSDK_CONTAINER_CLUSTER=demo-cluster'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=sdp-demo-cluster'
 images:
 - 'gcr.io/$PROJECT_ID/npm-demo-app'
 tags:
