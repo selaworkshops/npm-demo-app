@@ -7,6 +7,7 @@ spec:
     app: nodejs-demo
   ports:
     - port: 3000
+      nodePort: 30082
       targetPort: 3000
   type: NodePort
 
