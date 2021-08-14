@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nodejs-demo1
+  name: nodejs
 spec:
   selector:
-    app: nodejs-demo1
+    app: nodejs
   ports:
     - port: 3000
       nodePort: 30082
