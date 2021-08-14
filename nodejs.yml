@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodejs-demo1
+  name: nodejs
 spec:
   selector:
     matchLabels:
-      app: nodejs-demo1
-  replicas: 1 # tells deployment to run 2 pods matching the template
+      app: nodejs
+  replicas: 1 
   template:
     metadata:
       labels:
-        app: nodejs-demo1
+        app: nodejs
     spec:
       containers:
-      - name: nodejs-demo1
+      - name: nodejs
         image: dando77/demo
         ports:
         - containerPort: 3000
